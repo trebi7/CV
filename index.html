@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Irié Armand Davy TRE BI, Statisticien MEAL</title>
+<meta name="author" content="TRE BI">
+<meta name="description" content="CV d'Irié Armand Davy TRE BI, statisticien, expert en collecte digitalisée des données et en suivi-évaluation (MEAL) à Abidjan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F6F7F4;
+    --sheet:#FFFFFF;
+    --ink:#1B2A2F;
+    --muted:#5C696C;
+    --rule:#DCE1DC;
+    --field:#1F5C55;
+    --field-soft:#E6EFEC;
+    --ochre:#B07D24;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font:15.5px/1.6 "Public Sans",system-ui,sans-serif;
+    /* Verrouillage de la sélection */
+    -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;
+    -webkit-touch-callout:none;
+  }
+  img,svg{-webkit-user-drag:none;user-drag:none;pointer-events:none}
+  a{color:var(--field);text-decoration:none;border-bottom:1px solid transparent}
+  a:hover{border-bottom-color:currentColor}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--ochre);outline-offset:3px;border-radius:2px}
+
+  .sheet{max-width:1080px;margin:40px auto;background:var(--sheet);
+    box-shadow:0 1px 0 var(--rule),0 18px 40px -28px rgba(27,42,47,.35)}
+
+  /* En-tête */
+  header{padding:48px 56px 36px;border-bottom:1px solid var(--rule);position:relative}
+  header::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--field)}
+  h1{font:600 clamp(30px,4.4vw,44px)/1.1 "Newsreader",Georgia,serif;margin:0 0 10px;letter-spacing:-.01em}
+  h1 .last{color:var(--field)}
+  .role{font-size:17px;font-weight:500;margin:0 0 6px}
+  .tools{color:var(--muted);margin:0 0 22px}
+  .contact{display:flex;flex-wrap:wrap;gap:8px 22px;margin:0;padding:0;list-style:none;font-size:14.5px}
+  .contact li{display:flex;align-items:center;gap:7px}
+  .contact svg{width:15px;height:15px;stroke:var(--field);fill:none;stroke-width:1.8;flex:none}
+  .avail{margin:16px 0 0;font-size:14px;color:var(--muted)}
+  .pdf-btn{position:absolute;right:56px;top:48px;font:500 13.5px "Public Sans",sans-serif;
+    color:var(--field);border:1px solid var(--field);padding:8px 14px;border-radius:3px;background:none}
+  .pdf-btn:hover{background:var(--field);color:#fff;border-bottom-color:var(--field)}
+
+  /* Grille */
+  .grid{display:grid;grid-template-columns:300px 1fr}
+  aside{background:var(--field-soft);padding:36px 32px 40px}
+  main{padding:36px 56px 48px}
+  h2{font:600 22px/1.2 "Newsreader",Georgia,serif;margin:0 0 16px;color:var(--ink)}
+  section+section{margin-top:38px}
+  aside section+section{margin-top:30px}
+  aside h2{font-size:19px;color:var(--field)}
+
+  .lead{margin:0;max-width:68ch}
+
+  /* Compétences */
+  .skill{margin:0 0 16px}
+  .skill h3{font-size:14.5px;font-weight:600;margin:0 0 3px}
+  .skill p{margin:0;font-size:14px;color:#33464B;line-height:1.55}
+  .plain{list-style:none;margin:0;padding:0;font-size:14px}
+  .plain li{padding:6px 0;border-bottom:1px solid #CFDDD8}
+  .plain li:last-child{border-bottom:0}
+  .plain small{display:block;color:var(--muted);font-size:13px}
+
+  /* Expériences */
+  .entry{display:grid;grid-template-columns:118px 1fr;gap:0 22px;padding:18px 0;border-top:1px solid var(--rule)}
+  .entry:first-of-type{border-top:0;padding-top:4px}
+  .when{font-size:13.5px;color:var(--muted);padding-top:2px;font-variant-numeric:tabular-nums}
+  .entry h3{font-size:16px;font-weight:600;margin:0;line-height:1.35}
+  .org{margin:2px 0 8px;color:var(--field);font-size:14.5px;font-weight:500}
+  .entry ul{margin:0;padding-left:18px}
+  .entry li{margin:0 0 5px;max-width:72ch}
+  .entry li::marker{color:var(--ochre)}
+  .spec{display:flex;flex-wrap:wrap;gap:6px 18px;margin:8px 0 10px;padding:10px 14px;
+    background:#FBF6EC;border-left:3px solid var(--ochre);font-size:13.5px}
+  .spec b{font-weight:600;color:var(--ochre);font-variant-numeric:tabular-nums}
+
+  .earlier li{margin-bottom:8px}
+  .refs{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+  .refs li{font-size:14.5px}
+  .refs span{display:block;color:var(--muted);font-size:13.5px}
+  .note{font-size:13.5px;color:var(--muted);margin:12px 0 0}
+
+  footer{border-top:1px solid var(--rule);padding:16px 56px;font-size:12.5px;color:var(--muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+  /* Avis de copie bloquée */
+  .toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);opacity:0;
+    background:var(--ink);color:#fff;font-size:14px;padding:10px 16px;border-radius:4px;
+    transition:opacity .2s,transform .2s;pointer-events:none;z-index:10;max-width:calc(100% - 32px);text-align:center}
+  .toast.show{opacity:1;transform:translate(-50%,0)}
+
+  @media (max-width:860px){
+    .sheet{margin:0;box-shadow:none}
+    header{padding:32px 20px 26px}
+    .pdf-btn{position:static;display:inline-block;margin-top:18px}
+    .grid{grid-template-columns:1fr}
+    aside{padding:28px 20px;order:2}
+    main{padding:28px 20px 36px}
+    footer{padding:16px 20px}
+    .entry{grid-template-columns:1fr;gap:4px}
+  }
+  @media (prefers-reduced-motion:reduce){.toast{transition:none}}
+
+  /* Impression désactivée */
+  @media print{
+    body *{display:none !important}
+    body::before{content:"L'impression de ce CV est désactivée. Pour recevoir la version PDF : armanddavy7@gmail.com";
+      display:block;font:16px/1.5 sans-serif;padding:40px;color:#000}
+  }
+</style>
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+<div class="sheet">
+  <header>
+    <h1>Irié Armand Davy <span class="last">TRE BI</span></h1>
+    <p class="role">Statisticien | Expert en collecte digitalisée des données | Suivi-Évaluation et Apprentissage (MEAL)</p>
+    <p class="tools">XLSForm, KoboToolbox, ODK, CommCare, SurveyCTO</p>
+    <ul class="contact">
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Abidjan, Côte d'Ivoire</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:armanddavy7@gmail.com">armanddavy7@gmail.com</a></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><a href="tel:+2250747778037">+225 07 47 77 80 37</a></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg><a href="https://linkedin.com/in/tre-bi" target="_blank" rel="noopener">linkedin.com/in/tre-bi</a></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.5-4-2-6-2.5m12 5v-3.5a3 3 0 0 0-.9-2.4c3-.3 6-1.5 6-6.6a5 5 0 0 0-1.4-3.6 4.7 4.7 0 0 0-.1-3.6s-1.1-.3-3.6 1.4a12.4 12.4 0 0 0-6.5 0C6 1.5 4.9 1.8 4.9 1.8a4.7 4.7 0 0 0-.1 3.6A5 5 0 0 0 3.4 9c0 5 3 6.3 6 6.6a3 3 0 0 0-.9 2.4V22"/></svg><a href="https://github.com/trebi7" target="_blank" rel="noopener">github.com/trebi7</a></li>
+    </ul>
+    <p class="avail">Autorisé à travailler en Côte d'Ivoire. Disponible pour 30 % de déplacements terrain.</p>
+    <a class="pdf-btn" href="mailto:armanddavy7@gmail.com?subject=Demande%20du%20CV%20en%20PDF">Demander le CV en PDF</a>
+  </header>
+
+  <div class="grid">
+    <aside>
+      <section>
+        <h2>Compétences clés</h2>
+        <div class="skill">
+          <h3>Conception d'enquêtes et méthodologie</h3>
+          <p>Protocoles d'études, rédaction et versionnage de questionnaires, correspondance indicateurs-questions, échantillonnage stratifié (PPT), logique de saut, pré-tests et pilotes, plans d'analyse, dictionnaires de données.</p>
+        </div>
+        <div class="skill">
+          <h3>Programmation d'enquêtes</h3>
+          <p>XLSForm (relevant, constraint, calculation, groupes repeat, listes en cascade choice_filter, libellés multilingues), KoboToolbox, ODK Collect et Briefcase, SurveyCTO, ONA, CommCare, CSPro. Capture GPS et photo, collecte hors ligne et synchronisation.</p>
+        </div>
+        <div class="skill">
+          <h3>Assurance qualité des données</h3>
+          <p>Règles de validation et contrôles de cohérence dans les formulaires, suivi des soumissions sur le serveur avec retours aux équipes, RDQA, triangulation, doublons et valeurs aberrantes, apurement avec R et Stata.</p>
+        </div>
+        <div class="skill">
+          <h3>Administration plateformes et appareils</h3>
+          <p>Espace projet CommCare, KoboToolbox (administrateurs, utilisateurs web et mobiles, applications, versions), paramétrage et maintenance des tablettes et smartphones, déploiement sur les sites, manuels administrateurs et utilisateurs.</p>
+        </div>
+        <div class="skill">
+          <h3>Formation et appui terrain</h3>
+          <p>Formation des enquêteurs, superviseurs et équipes de coordination (jeux de rôle, consentement, manipulation des appareils, validation des données), pré et post-tests des participants, supervision terrain, appui à distance et sur site.</p>
+        </div>
+        <div class="skill">
+          <h3>Analyse et reporting</h3>
+          <p>R, Stata, SPSS, SQL, Excel avancé, Power BI, R Shiny, DHIS2.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Formation</h2>
+        <ul class="plain">
+          <li>Master en Analyse de Données<small>INSSEDS, Abidjan, 2025</small></li>
+          <li>Technicien Supérieur de la Statistique<small>ENSEA, Abidjan, 2007</small></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Certifications</h2>
+        <ul class="plain">
+          <li>ODK et Stata<small>ENSEA</small></li>
+          <li>CommCare Application Building et Fondamentaux<small>Dimagi</small></li>
+          <li>DHIS2 paramétrage et SIS communautaire<small>HISP, UNICEF, Université d'Oslo</small></li>
+          <li>DSAT-Lite sécurité des données<small>PATH</small></li>
+          <li>Scrum Master<small>Certiprof</small></li>
+          <li>GMTP (Global Management Training Program)<small>Jhpiego</small></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Langues</h2>
+        <ul class="plain">
+          <li>Français<small>Langue maternelle</small></li>
+          <li>Anglais<small>Maîtrise professionnelle (B2)</small></li>
+        </ul>
+      </section>
+    </aside>
+
+    <main>
+      <section>
+        <h2>Profil</h2>
+        <p class="lead">Statisticien avec plus de 15 ans d'expérience dans les systèmes de données de santé et de développement en Côte d'Ivoire. J'ai conçu les questionnaires numériques de plus de 10 enquêtes et évaluations, des études de base nutritionnelles aux enquêtes ménages et en structures de santé, et j'en ai suivi la plupart sur tout le cycle : méthodologie, conception des outils, paramétrage des tablettes, formation des enquêteurs, supervision terrain et suivi quotidien des données reçues. Je dirige chez Jhpiego une équipe d'informaticiens et de statisticiens.</p>
+      </section>
+
+      <section>
+        <h2>Missions de conception d'enquêtes et de collecte terrain</h2>
+
+        <article class="entry">
+          <div class="when">déc. 2025 – févr. 2026</div>
+          <div>
+            <h3>Expert Statisticien, Enquête ménage du Plan Stratégique de Gestion de l'Environnement</h3>
+            <p class="org">Elite Corporate Consulting pour le District Autonome du Gôh-Djiboua</p>
+            <ul>
+              <li>Élaboration de la méthodologie de collecte d'une enquête ménage à l'échelle du district autonome : déchets, eau et assainissement, pollution de l'air, ressources naturelles et pratiques agricoles.</li>
+              <li>Rédaction du questionnaire ménage et programmation en XLSForm pour KoboToolbox, avec listes en cascade département, sous-préfecture et village, capture GPS et photo, horodatage et identifiant d'appareil pour l'audit.</li>
+            </ul>
+            <div class="spec"><span><b>290+</b> champs</span><span><b>36</b> sections</span><span><b>169</b> conditions d'affichage</span><span><b>245</b> champs obligatoires</span></div>
+            <ul>
+              <li>Connexion de R à KoboToolbox via API pour l'actualisation des données, le suivi des enquêteurs (tableau de bord R Shiny intégré), le traitement et l'analyse des données.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="when">oct. 2024 – févr. 2026</div>
+          <div>
+            <h3>Consultant, Reporting GES, MRV et systèmes de collecte</h3>
+            <p class="org">GIZ ProFERE 2, Côte d'Ivoire</p>
+            <ul>
+              <li>Évaluation des pratiques de reporting des gaz à effet de serre du secteur privé ivoirien : échantillonnage des entreprises, questionnaires KoboToolbox, apurement, analyse et formation ISO 14064.</li>
+              <li>Évaluation du système de collecte MNV Énergie (grille d'évaluation, SEPO) et animation de l'atelier du plan d'action.</li>
+              <li>Application R Shiny de calcul des indicateurs MRV pour le ministère des Transports, avec guide utilisateur.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="when">oct. – déc. 2023</div>
+          <div>
+            <h3>Analyste de données, Analyse situationnelle de la SVAD de routine</h3>
+            <p class="org">BEDSAH International pour le Programme National de Nutrition, financement Helen Keller International</p>
+            <ul>
+              <li>Contribution au protocole et à l'échantillonnage : plan stratifié à deux degrés, districts et établissements tirés avec probabilité proportionnelle à la taille dans une base de 73 districts.</li>
+              <li>Programmation des outils quantitatifs sous KoboToolbox (évaluation des structures, grille d'observation, questionnaire de sortie des parents) et suivi des données pendant la collecte.</li>
+              <li>Co-animation de la formation de 4 jours des enquêteurs et superviseurs : jeux de rôle question par question, consentement éclairé, saisie sur smartphone dont l'anthropométrie, pré-test et post-test des participants.</li>
+              <li>Participation au pré-test terrain et correction des outils avant déploiement ; apurement et analyse des données sous R, contribution au rapport final.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="when">mars – mai 2021</div>
+          <div>
+            <h3>Consultant qualité des données et S&amp;E, Projet She Decides</h3>
+            <p class="org">IPPF Région Afrique, Mali (à distance et sur place)</p>
+            <ul>
+              <li>Organisation d'un RDQA, restructuration du système d'information de l'association membre du Mali et formation de ses gestionnaires de données sur DHIS2.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="when">2017</div>
+          <div>
+            <h3>Consultant Statisticien, Enquête sur la prévalence et les caractéristiques du diabète</h3>
+            <p class="org">HISP Côte d'Ivoire pour le Programme National de Lutte contre les Maladies Métaboliques</p>
+            <ul>
+              <li>Programmation des questionnaires ODK avec intégration de la méthode de Kish, paramétrage des tablettes, supervision des équipes terrain et suivi des données sur le serveur avec retours aux enquêteurs sur la qualité des données.</li>
+              <li>Apurement et analyse sous R d'une base de plus de 3 000 enregistrements, contribution au rapport final.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="when">2014 – 2020</div>
+          <div>
+            <h3>Autres enquêtes : conception des questionnaires sous ODK, paramétrage des tablettes, suivi, apurement et analyse des données</h3>
+            <p class="org">BEDSAH International, VillageReach, Smart Research &amp; Consulting, Ministère de la Santé</p>
+            <ul>
+              <li>Étude de base du projet M-VACCIN pour VillageReach et le PEV (avr. – mai 2019) : masque CSPro, plan d'analyse, apurement et analyse.</li>
+              <li>Étude de référence nutritionnelle dans la zone du Pôle Agro-Industriel du Bélier (2PAI-Bélier) ; prise en charge nutritionnelle et sécurité alimentaire des personnes vivant avec le VIH (ESNAPOCI 2020).</li>
+              <li>Services de nutrition de la mère, du nourrisson et du jeune enfant en périurbain d'Abidjan ; violations du code de commercialisation des substituts du lait maternel dans les structures de santé.</li>
+              <li>Étude CAP sur les MTN à manifestation cutanée ; revue nationale de la qualité des données et des soins ; étude de mortalité et morbidité hospitalières (VIH, TB, paludisme) avec supervision terrain.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <h2>Expérience professionnelle</h2>
+
+        <article class="entry">
+          <div class="when">oct. 2022 – aujourd'hui</div>
+          <div>
+            <h3>Conseiller Technique gestion de Bases de données (Digital Health Manager)</h3>
+            <p class="org">Jhpiego, Projet RISE, Abidjan</p>
+            <ul>
+              <li>Gestion d'une équipe d'informaticiens et de statisticiens, coordination des activités terrain pour que les outils numériques fonctionnent sur tous les sites.</li>
+              <li>Déploiement et maintenance des outils électroniques nationaux (SIGDEP, UPID, CommCare) ; développement des applications CommCare de suivi de plus de 52 000 patients ; suivi du parc de smartphones.</li>
+              <li>Extraction des données de CommCare via API dans MySQL, traitement et analyse avec SQL et R, correction et sauvegarde des bases ; conception et maintenance du tableau de bord Power BI de suivi des KPI ; contribution aux rapports trimestriels.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="when">nov. 2020 – sept. 2022</div>
+          <div>
+            <h3>Assistant E-Santé</h3>
+            <p class="org">Jhpiego, Projet RPP-HIV, Abidjan</p>
+            <ul>
+              <li>Gestion de l'espace projet CommCare (utilisateurs, applications), développement de nouveaux modules sous CommCare, OpenSRP et DHIS2 Tracker, maintenance des téléphones et tablettes.</li>
+              <li>Cahiers des charges et manuels administrateurs et utilisateurs, formation des agents de santé et agents de santé communautaires à la plateforme de suivi des patients ; requêtes SQL Server et tableaux de bord Power BI.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="when">juin – sept. 2020</div>
+          <div>
+            <h3>Consultant Gestionnaire de données</h3>
+            <p class="org">Cellule Fiduciaire, Projet MSHP CoAg, Abidjan</p>
+            <ul>
+              <li>Contrôle qualité des données du SNIS par triangulation mensuelle des indicateurs DHIS2 et SIGDEP 2 ; tableaux de bord mensuels et rapports trimestriels de performance.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="when">août 2016 – juin 2020</div>
+          <div>
+            <h3>Statisticien, Assistant Suivi-Évaluation</h3>
+            <p class="org">Ministère de la Santé, DIIS, Service Statistique</p>
+            <ul>
+              <li>Rédaction de protocoles et conception d'outils de collecte numériques (CommCare, ODK, CSPro) pour les enquêtes et évaluations nationales, puis traitement et analyse des données.</li>
+              <li>Analyse des bases nationales DHIS2 et Carte Sanitaire, mise à jour des statistiques et indicateurs nationaux.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="when">2014 – 2016</div>
+          <div>
+            <h3>Postes antérieurs</h3>
+            <ul class="earlier">
+              <li><strong>Superviseur Suivi-Évaluation</strong>, IRC, Projet Soins de Santé Primaire (oct. 2015 – janv. 2016) : visites terrain de vérification du remplissage des outils, contrôle qualité des données des ESPC.</li>
+              <li><strong>Statisticien, Chargé du S&amp;E</strong>, Programme National de Nutrition (janv. 2014 – oct. 2015) : outils de suivi-évaluation et bases de données, indicateurs clés et rapports de nutrition.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <h2>Références</h2>
+        <ul class="refs">
+          <li><strong>Dr Firmin KOUASSI</strong><span>Enseignant-Chercheur, Chef de projet, BEDSAH International</span></li>
+          <li><strong>Dr N'Dah Eric ALLADE</strong><span>Coordonnateur, HISP Côte d'Ivoire</span></li>
+          <li><strong>KONATE Moussa</strong><span>Conseiller Technique Senior (MEAL), Jhpiego, Projet RISE</span></li>
+        </ul>
+        <p class="note">Coordonnées des références communiquées sur demande.</p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <span>© TRE BI. Reproduction et copie du contenu non autorisées.</span>
+    <span>Mis à jour en octobre 2026</span>
+  </footer>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  var toast=document.getElementById('toast'),t;
+  function notice(){
+    toast.textContent="La copie de ce CV est désactivée. Demandez la version PDF par e-mail.";
+    toast.classList.add('show');clearTimeout(t);t=setTimeout(function(){toast.classList.remove('show')},2600);
+  }
+  function block(e){e.preventDefault();e.stopPropagation();notice();return false}
+
+  // Clic droit, sélection, glisser-déposer
+  ['contextmenu','selectstart','dragstart'].forEach(function(ev){
+    document.addEventListener(ev,function(e){e.preventDefault();return false},true);
+  });
+
+  // Copier / couper : on remplace le contenu du presse-papiers
+  ['copy','cut'].forEach(function(ev){
+    document.addEventListener(ev,function(e){
+      if(e.clipboardData){e.clipboardData.setData('text/plain','Contenu protégé. CV disponible sur demande : armanddavy7@gmail.com');}
+      block(e);
+    },true);
+  });
+
+  // Raccourcis clavier : copier, tout sélectionner, enregistrer, imprimer, code source, outils de développement
+  document.addEventListener('keydown',function(e){
+    var k=(e.key||'').toLowerCase(), mod=e.ctrlKey||e.metaKey;
+    if(e.key==='F12') return block(e);
+    if(mod && ['c','x','a','s','u','p'].indexOf(k)>-1) return block(e);
+    if(mod && e.shiftKey && ['i','j','c','k'].indexOf(k)>-1) return block(e);
+    if(e.metaKey && e.altKey && ['i','j','c','u'].indexOf(k)>-1) return block(e);
+  },true);
+
+  // Impression via le menu du navigateur
+  window.addEventListener('beforeprint',notice);
+
+  // Efface toute sélection résiduelle
+  document.addEventListener('mouseup',function(){
+    var s=window.getSelection&&window.getSelection(); if(s&&s.removeAllRanges) s.removeAllRanges();
+  });
+})();
+</script>
+</body>
+</html>
