@@ -86,6 +86,12 @@
   .spec b{font-weight:600;color:var(--ochre);font-variant-numeric:tabular-nums}
 
   .earlier li{margin-bottom:8px}
+  .project{padding:16px 0;border-top:1px solid var(--rule)}
+  .project:first-of-type{border-top:0;padding-top:4px}
+  .project h3{font-size:16px;font-weight:600;margin:0 0 4px;line-height:1.35}
+  .project p{margin:0 0 6px;max-width:72ch}
+  .project .stack{font-size:13.5px;color:var(--muted)}
+  .project a{display:inline-block;margin-right:18px;font-size:14px;font-weight:500}
   .refs{display:grid;gap:12px;margin:0;padding:0;list-style:none}
   .refs li{font-size:14.5px}
   .refs span{display:block;color:var(--muted);font-size:13.5px}
@@ -347,6 +353,41 @@
             </ul>
           </div>
         </article>
+      </section>
+
+      <section>
+        <h2>Réalisations sur GitHub</h2>
+
+        <article class="project">
+          <h3>Tableau de bord de suivi de l'enquête WASH du Gôh-Djiboua</h3>
+          <p>Application R Shiny branchée sur KoboToolbox par API pour suivre la collecte en temps réel : avancement par enquêteur et par zone, contrôle qualité (complétude, doublons, anomalies), calcul des indices WASH, carte interactive des ménages et exports Excel.</p>
+          <p class="stack">R, Shiny, robotoolbox, Leaflet, Plotly</p>
+          <a href="https://github.com/trebi7/wash-goh-djiboua" target="_blank" rel="noopener">Voir le dépôt</a>
+        </article>
+
+        <article class="project">
+          <h3>Générateur automatique de XLSForm (KoboToolbox et SurveyCTO)</h3>
+          <p>Outil en ligne qui convertit un questionnaire Word, Excel ou PDF en formulaire XLSForm prêt à déployer, en version KoboToolbox/ODK ou SurveyCTO.</p>
+          <p class="stack">XLSForm, automatisation, HTML/JavaScript</p>
+          <a href="https://trebi7.github.io/Generateur-XLSForm-Automatique/" target="_blank" rel="noopener">Ouvrir l'outil</a>
+          <a href="https://github.com/trebi7/Generateur-SurveyCTO_XLSForm-Automatique" target="_blank" rel="noopener">Version SurveyCTO</a>
+        </article>
+
+        <article class="project">
+          <h3>Du questionnaire au plan d'analyse et aux scripts R</h3>
+          <p>À partir d'un questionnaire déposé, l'outil envoie par e-mail le XLSForm, un plan d'analyse rédigé au format Word, le dictionnaire des variables et les scripts R qui automatisent l'analyse.</p>
+          <p class="stack">XLSForm, R, plan d'analyse, automatisation</p>
+          <a href="https://github.com/trebi7/XLSForm-Plan-Analyse-Scripts-R" target="_blank" rel="noopener">Voir le dépôt</a>
+        </article>
+
+        <article class="project">
+          <h3>Analyse de données WASH assistée par l'IA</h3>
+          <p>Chaîne complète sur 1 000 ménages : nettoyage, indicateurs clés (accès à l'eau, défécation à l'air libre, lavage des mains), graphiques, rapports Word et HTML en français et en anglais, et tableau de bord Excel avec 11 graphiques et 5 segments. Les choix d'analyse sont pilotés par l'analyste, l'IA sert de copilote pour le code.</p>
+          <p class="stack">Python, matplotlib, openpyxl, python-docx, Claude</p>
+          <a href="https://github.com/trebi7/ai-assisted-data-analyst" target="_blank" rel="noopener">Voir le dépôt</a>
+        </article>
+
+        <p class="note">Tous les projets : <a href="https://github.com/trebi7" target="_blank" rel="noopener">github.com/trebi7</a></p>
       </section>
 
       <section>
